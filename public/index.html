@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSockets</title>
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js"
+      integrity="sha512-luMnTJZ7oEchNDZAtQhgjomP1eZefnl82ruTH/3Oj/Yu5qYtwL7+dVRccACS/Snp1lFXq188XFipHKYE75IaQQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <section class="msger">
+      <header class="msger-header">
+        <div class="msger-header-title">
+          <i class="fas fa-comment-alt"></i> SimpleChat
+        </div>
+        <div class="msger-header-options">
+          <span><i class="fas fa-cog"></i></span>
+        </div>
+      </header>
+
+      <main class="msger-chat"></main>
+      <p class="activity"></p>
+      <form class="msger-inputarea">
+        <input
+          type="text"
+          class="msger-input"
+          placeholder="Enter your message..."
+        />
+        <button type="submit" class="msger-send-btn">Send</button>
+      </form>
+    </section>
+  </body>
+</html>
